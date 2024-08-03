@@ -2,6 +2,12 @@
 
 This project is a web application that combines geolocation data with NFT (Non-Fungible Token) generation. It displays maps, location information, and allows users to create NFTs without requiring wallet extensions like MetaMask. The project is built with Next.js, Ethers.js, React Google Maps API, and Shadcn UI components.
 
+## How this dapp create NFT tokens without using any wallet extension
+
+This dapp implements a unique approach to creating NFT tokens without requiring users to have a wallet extension like MetaMask. Here's how it works:
+
+**Ethers.js Wallet**: We use Ethers.js to manage a wallet using private key on app itself. This wallet is used to interact with the Ethereum blockchain on behalf of the user.
+
 ## Technologies Used
 
 - [Next.js](https://nextjs.org/) - React framework for building web applications
@@ -16,7 +22,6 @@ This project is a web application that combines geolocation data with NFT (Non-F
 - Generate NFT tokens based on geolocation data
 - Interact with Ethereum blockchain using Ethers.js without wallet extensions
 - Modern and responsive UI using Shadcn components
-- Server-side rendering and static site generation with Next.js
 
 ## Getting Started
 
