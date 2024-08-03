@@ -10,7 +10,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
     <body className={inter.className + ' min-h-screen'}>
       <ThemeProvider
         attribute='class'
-        defaultTheme='system'
+        defaultTheme='light'
         enableSystem
         disableTransitionOnChange
       >
