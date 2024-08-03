@@ -35,9 +35,12 @@ This dapp implements a unique approach to creating NFT tokens without requiring 
 ## Usage
 
 1. Navigate to a location on the map or enter coordinates.
-2. Click on the "Generate NFT" button to create an NFT based on the current location.
-3. Confirm the transaction in the application interface.
-4. Once confirmed, your NFT will be minted and associated with the chosen location.
+2. Get your private key. checkout [here](https://support.metamask.io/managing-my-wallet/secret-recovery-phrase-and-private-keys/how-to-export-an-accounts-private-key/#:~:text=On%20the%20'Account%20details'%20page,private%20key%20to%20your%20clipboard.).
+3. Click `Open & Save private key` key Button and paste the key, Don't worry we do not save your private key anywhere.
+3. Click on the "Generate NFT" button to create an NFT based on the current location.
+4. Confirm the transaction in the application interface.
+5. You can confirm the transaction from [here](https://sepolia.etherscan.io/) by copying and pasting your token/tnx ID in Sepolia Testnet Explorer.
+5. Once confirmed, your NFT will be minted and associated with the chosen location.
 
 ## Smart Contract
 
