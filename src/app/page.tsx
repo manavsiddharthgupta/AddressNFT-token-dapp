@@ -97,6 +97,9 @@ export default function Home() {
             onChangePrivateKey={handlePrivateKey}
             privateKey={privateKey}
           />
+          <p className='mt-1 mb-8 text-xs text-gray-600 italic'>
+            * Your private key is used only for transaction costs like gas fees.
+          </p>
           {AllTokensInfo.length > 0 ? (
             <div className='flex flex-col gap-3'>
               {AllTokensInfo.map((reciept, idx) => {

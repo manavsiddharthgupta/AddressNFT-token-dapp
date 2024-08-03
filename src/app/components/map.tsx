@@ -1,8 +1,8 @@
 'use client'
 import React, { useCallback, useState } from 'react'
 import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api'
-import { Card } from '@/components/ui/card'
-import AddressInput from './autocomplete-input'
+import { Card } from '@/app/components/ui/card'
+import AddressInput from '@/app/components/autocomplete-input'
 
 interface MapProps {
   latitude: number

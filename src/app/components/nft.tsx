@@ -14,9 +14,10 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger
-} from '@/components/ui/alert-dialog'
-import { Input } from '@/components/ui/input'
+} from '@/app/components/ui/alert-dialog'
+import { Input } from '@/app/components/ui/input'
 import { NFTTokenInfo } from '../page'
+import Link from 'next/link'
 
 interface MapProps {
   latitude: number
@@ -91,7 +92,10 @@ const GenerateNFT = ({
       )
     } catch (err) {
       setStatus(false)
-      toast.error(`${err}`)
+      toast.error('Could not generate NFT token :', {
+        description: `${err}`,
+        descriptionClassName: 'overflow-hidden line-clamp-4'
+      })
     }
   }
 
@@ -128,7 +132,7 @@ export const PrivateKeyDialog = ({
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
-        <Button className='w-full mb-8' variant='outline'>
+        <Button className='w-full' variant='outline'>
           Open & Save Your Private Key
         </Button>
       </AlertDialogTrigger>
@@ -136,10 +140,19 @@ export const PrivateKeyDialog = ({
         <AlertDialogHeader>
           <AlertDialogTitle>Enter Private Key</AlertDialogTitle>
           <AlertDialogDescription>
-            Please enter your private key to proceed.
+            Please enter your private key to proceed.{' '}
+            <Link
+              href="https://support.metamask.io/managing-my-wallet/secret-recovery-phrase-and-private-keys/how-to-export-an-accounts-private-key/#:~:text=On%20the%20'Account%20details'%20page,private%20key%20to%20your%20clipboard."
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-blue-500 hover:underline'
+            >
+              Click here
+            </Link>{' '}
+            to learn how to get your wallet&apos;s private key.
           </AlertDialogDescription>
         </AlertDialogHeader>
-        <div className='space-y-4 py-4'>
+        <div className='space-y-4 py-2'>
           <div className='relative'>
             <Input
               type={showPassword ? 'text' : 'password'}
