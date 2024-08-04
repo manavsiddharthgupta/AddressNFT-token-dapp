@@ -14,7 +14,7 @@ This dapp implements a unique approach to creating NFT tokens without requiring 
 - [Ethers.js](https://docs.ethers.org/v5/) - Library for interacting with the Ethereum blockchain
 - [React Google Maps API](https://react-google-maps-api-docs.netlify.app/) - React components for Google Maps
 - [Shadcn UI](https://ui.shadcn.com/) - Re-usable components built with Radix UI and Tailwind CSS
-- Custom Smart Contract - For generating NFT tokens without wallet extensions
+- Smart contract has been deployed on the Sepolia testnet. [View Contract](https://sepolia.etherscan.io/address/0x8B1Fe6e79545710832ba88F6236e4A8B8F7FE30e)
 
 ## Features
 
@@ -52,6 +52,6 @@ The project includes a custom smart contract for generating NFT tokens without r
 
 To interact with the contract:
 
-1. Deploy the contract to your chosen Ethereum network (Sepolia Testnet network).
+1. Deploy the contract to your Ethereum (Sepolia network).
 2. Update the `NEXT_PUBLIC_CONTRACT_ADDRESS` in your `.env` file with the deployed contract address.
 3. Use the provided functions in the frontend to interact with the contract through Ethers.js.
